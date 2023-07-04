@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Job</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+    	<style>
+    	@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        body
+        {
+            margin: 0;
+        }
+    	    @media ( max-width : 749px )
+            {
+                .title
+                {
+                    display: inline-block;
+                    width: 50%;
+                }
+                .title img
+                {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 70px;
+                }
+                .title h2
+                {
+                    display: inline-block;
+                    font-family: 'josefin sans',sans-serif;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.2;
+                }
+                .profile
+                {
+                    display: inline-block;
+                    /* float: right; */
+                }
+                .profile img
+                {
+                    display: inline-block;
+                    margin-top: 10px;
+                    margin-right: 15px;
+                    width: 50px;
+                    vertical-align: middle;
+                    /* float: right; */
+                }
+                #job-title
+                 {
+                     display: block;
+                     margin: 20px;
+                 }
+                 .job_title
+                 {
+                     display: inline-block;
+                     font-family: 'josefin sans',sans-serif;
+                     vertical-align: middle;
+                     font-size: 25px;
+                     font-weight: 400;
+                     line-height: 1.2;
+                 }
+                 .menu
+                 {
+                    display: none;
+                 }
+                 #job-title
+                 {
+                     display: block;
+                     margin-top: 20px;
+                     width: 90%;
+                 }
+                 .job_title
+                 {
+                     display: inline-block;
+                     font-family: 'josefin sans',sans-serif;
+                     vertical-align: middle;
+                     font-size: 30px;
+                     width: 95%;
+                     text-align: center;
+                     font-weight: 400;
+                     line-height: 1.2;
+                 }
+                 #des_div
+                 {
+                     display: block;
+                     width: 98%;
+                     margin: auto;
+                     text-align: justify;
+                 }
+                 #description
+                 {
+                     display: block;
+                     width: 90%;
+                     margin-left: 5%;
+                     /* vertical-align: middle; */
+                 }
+                 .des_img
+                 {
+                     display: block;
+                     width: 70%;
+                     margin: auto;
+                     /* vertical-align: middle; */
+                 }
+                 .apply_btn
+                 {
+                    display: block;
+                    width: 40%;
+                    margin: auto;
+                    text-align: center;
+                     background: white;
+                     border: 3px solid #0352BD;
+                     border-radius: 25px;
+                     padding-top: 15px;
+                     padding-bottom: 12px;
+                     padding-left: 25px;
+                     padding-right: 25px;
+                     font-size: 20px;
+                     text-decoration: none;
+                     font-family: 'josefin sans',sans-serif;
+                     color: #0352BD;
+                 }
+                 .apply_btn:hover
+                 {
+                     color: white;
+                     background-color: #0352BD;
+                 }
+                 .req_li
+                 {
+                     display: block;
+                     padding: 20px;
+                     font-family: 'nunito',sans-serif;
+                     font-size: 15px;
+                     color: white;
+                     margin-left: 20px;
+                     width: 80%;
+                 }
+                 .req_img
+                 {
+                     display: block;
+                     width: 150px;
+                     border-radius: 75px;
+                     margin-top: 40px;
+                     margin: auto;
+                     /* vertical-align: middle; */
+                 }
+                 p
+                 {
+                     font-family: 'nunito',sans-serif;
+                     font-size: 15px;
+                 }
+
+                 .linkoption 
+                {
+                    
+                    display: block;
+                    padding: 1px;
+                    font-family: 'nunito',sans-serif;
+                    font-size: 16px;
+                    margin-top: 25px;
+                    text-decoration: none;
+                    color: black;   
+                        
+                }
+                .linkoption li a
+                {
+                    
+                    
+                    font-family: 'nunito',sans-serif;
+                    font-size: 16px;
+                    margin-top: 25px;
+                    text-decoration: none;
+                    margin: 2px;
+                    color: black;   
+                    display: block;
+                    width: 80%;
+                    
+                        
+                }
+
+                
+                
+                     
+            }
+                 
+            @media ( min-width : 750px )
+            {
+                 #navbar
+                 {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                 }
+                 .title
+                 {
+                     display: block;
+                 }
+                 .title img
+                 {
+                     display: inline-block;
+                     vertical-align: middle;
+                     width: 80px;
+                 }
+                 .title h2
+                 {
+                     display: inline-block;
+                     font-family: 'josefin sans',sans-serif;
+                     vertical-align: middle;
+                     font-size: 18px;
+                     font-weight: 400;
+                     line-height: 1.2;
+                 }
+                 .profile
+                 {
+                     display: block;
+                 }
+                 .profile img
+                 {
+                     display: inline;
+                     margin-top: 10px;
+                     margin-right: 15px;
+                     width: 60px;
+                     vertical-align: middle;
+                     float: right;
+                 }
+                 .menu
+                 {
+                     display: block;
+                     height: 100px;
+                 }
+                 .menu a
+                 {
+                     display: inline-block;
+                     background: transparent;
+                     padding: 10px;
+                     padding-left: 20px;
+                     padding-right: 20px;
+                     font-family: 'nunito',sans-serif;
+                     font-size: 16px;
+                     margin-top: 25px;
+                     text-decoration: none;
+                     color:black;
+                     border-radius: 25px;
+                 }
+                 .menu a:hover
+                 {
+                     background: #0352BD;
+                     color: white;
+                 }
+                 #job-title
+                 {
+                     display: block;
+                     margin: 20px;
+                     margin-left: 100px;
+                     margin-right: 120px;
+                 }
+                 .job_title
+                 {
+                     display: inline-block;
+                     font-family: 'josefin sans',sans-serif;
+                     vertical-align: middle;
+                     font-size: 30px;
+                     font-weight: 400;
+                     line-height: 1.2;
+                 }
+                 #des_div
+                 {
+                     display: block;
+                     width: 95%;
+                     margin: auto;
+                 }
+                 #description
+                 {
+                     display: inline-block;
+                     width: 50%;
+                     vertical-align: middle;
+                     margin-left: 70px;
+                 }
+                 .des_img
+                 {
+                     display: inline;
+                     width: 200px;
+                     float: right;
+                     margin-right: 70px;
+                     vertical-align: middle;
+                 }
+                 .apply_btn
+                 {
+                     background: white;
+                     border: 3px solid #0352BD;
+                     border-radius: 25px;
+                     padding-top: 15px;
+                     padding-bottom: 12px;
+                     padding-left: 25px;
+                     padding-right: 25px;
+                     font-size: 20px;
+                     text-decoration: none;
+                     font-family: 'josefin sans',sans-serif;
+                     float: right;
+                     color: #0352BD;
+                 }
+                 .apply_btn:hover
+                 {
+                     color: white;
+                     background-color: #0352BD;
+                 }
+                 .req_li
+                 {
+                     display: inline-block;
+                     padding: 20px;
+                     font-family: 'nunito',sans-serif;
+                     font-size: 15px;
+                     color: white;
+                     margin-left: 90px;
+                     width: 55%;
+                     vertical-align: middle;
+                 }
+                 .req_img
+                 {
+                     display: inline-block;
+                     width: 150px;
+                     border-radius: 75px;
+                     /* float: right; */
+                     margin-top: 40px;
+                     margin-right: 120px;
+                     vertical-align: middle;
+                 }
+                 p
+                 {
+                     font-family: 'nunito',sans-serif;
+                     font-size: 15px;
+                 }
+            }
+            #req
+            {
+                display: block;
+                background-color: #0352BD;
+                margin-top: 30px;
+            }
+            .about_head
+            {
+                display: block;
+                text-align: center;
+                font-family: 'josefin sans',sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .about_para
+            {
+                display: block;
+                text-align: justify;
+                width: 90%;
+                margin: auto;
+                font-family: 'nunito',sans-serif;
+                font-size: 16px;
+            }
+            .apply_btn2
+            {
+                display: block;
+                width: 200px;
+                margin: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                background: white;
+                border: 3px solid #0352BD;
+                border-radius: 25px;
+                padding-top: 15px;
+                padding-bottom: 12px;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 20px;
+                text-decoration: none;
+                font-family: 'josefin sans',sans-serif;
+                color: #0352BD;
+             }
+             .apply_btn2:hover
+             {
+                 color: white;
+                 background-color: #0352BD;
+             }
+             #contact
+             {
+                display: block;
+                width: 100%;
+                background-color: #0352BD; 
+                
+
+             }
+             .social
+            {
+                display: inline-block;
+                padding: 20px;
+                font-family: 'nunito',sans-serif;
+                font-size: 15px;
+                color: white;
+                margin-left: 90px;
+                width: 55%;
+                vertical-align: middle;
+                
+            }
+
+            .linkoption
+            {
+                
+                display: inline;
+                width: 150px;
+                border-radius: 75px;
+                float: right;
+                margin-top: 40px;
+                margin-right: 120px;
+                vertical-align: middle;
+                color: white;
+            
+            }
+            .linkoption a
+            {
+                
+                display: inline-block;
+                background: transparent;
+                padding: 1px;
+                font-family: 'nunito',sans-serif;
+                font-size: 16px;
+                margin-top: 25px;
+                text-decoration: none;
+                color: white;   
+                     
+            }
+
+    	</style>
+    </head>
+    <body>
+        <div id="navbar">
+            <div class="title">
+                <img src="https://static.wixstatic.com/media/8b8f2d_46f5f8aaf3ad4e93b98f0e8a390e19e8~mv2.png/v1/fill/w_117,h_117,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Overlay%20Dark%20shadowed%20compressed.png">
+                <h2>Calanjiyam <br>Consultancies <br>and Technologies</h2>
+            </div>
+            <div class="menu">
+                <a href="home.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="profile">
+                <a href="profile.html"><img src="https://img.freepik.com/free-icon/user_318-563642.jpg"></a>
+            </div>
+        </div>
+        <div id="job-title">
+            <h1 class="job_title">Web Development Intern</h1>
+            <a class="apply_btn" href="apply.html">Apply now!</a>
+        </div>
+        <div id="des_div">
+            <div id="description">
+                <p style="display:inline-block;">Remote </p> - <p style="display:inline-block;">Part Time</p>
+                <p>( Employer location - Tamil Nadu, India ) </p>
+                <p>The ideal candidate will be a college student who is looking for trainee internships, where they will learn about designing, developing, testing, and debugging responsive web and mobile applications using HTML, CSS, JavaScript, PHP, and MySQL.</p>
+            </div>
+            <img class="des_img" src="https://static.wixstatic.com/media/269c5c_8aa0b698b37f45d4819b0f687459e9e2~mv2.png/v1/fill/w_324,h_324,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Programmer-bro.png">
+        </div>
+        <div id="req">
+            <ul class="req_li">
+                <li>Current UG or Diploma student.</li>
+                <li>Good understanding of basic programming.</li>
+                <li>Basic visual design skills.</li>
+                <li>Up-to-date experience with Internet protocols, standards, and technologies.</li>
+                <li>Creative and open to new ideas.Adaptable and willing to learn new techniques.</li>
+                <li>Decent communication skills.The ideal candidate will be a college student who is looking for trainee internships, where they will learn about designing, developing, testing, and debugging responsive web and mobile applications using HTML, CSS, JavaScript, PHP, and MySQL. </li>
+            </ul>
+            <img class="req_img" src="https://static.wixstatic.com/media/269c5c_0eb77cfd7bb54a20966ad689cf8cf9f0~mv2.png/v1/fill/w_312,h_312,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Calanjiyam.png">
+        </div>
+        <div id="about">
+            <h4 class="about_head">About Us</h4>
+            <p class="about_para">Calanjiyam is a company that strives towards creating websites and software that touch people’s lives. As a customer-centric company, the vision of the company is to develop websites and software that help local and small-scale business to expand their market into the vast ocean of E-commerce. The main mission of the company is to keep everything simple & transparent. To offer strategic thinking, and design insights, and convert designs into products. Our Team has written over 500+ articles on various topics on our news site blog.crisscrosstamizh.in. Through the brand Criss Cross Tamizh, the company aims to convey complex engineering and daily social advancements to everyday normal citizens in both Tamizh and English</p>
+            <a class="apply_btn2" href="apply.php">Apply now!</a>
+        </div>
+        <div id="contact">
+            <img src="https://static.wixstatic.com/media/b6ebdb_c95f35afa26a4685b7418c07c2756fde~mv2.png/v1/fill/w_117,h_117,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Overlay%20light%20shadowed%20compressed.png" style="width:100px;margin:auto;display: block;">
+            <h4 class="about_head" style="color: white;line-height: 0.5;">Calanjiyam Consultancies and Technologies</h4>
+            <p style="text-align: center;color: white;">Think Before Acting</p>
+            
+                <div class="social">
+                    <h2>Contact</h2>
+                    <h4>Phone:</h4>
+                    <p>+918667280728</p>
+                    <h4>Mail:</h4>
+                    <p>+calanjiyam@gmail.com</p>
+                        <p>info@crisscrosstamizh.in</p>
+
+                
+                    <img src="https://static.wixstatic.com/media/11062b_2533d1d4c31245408717d17b946bc8d8~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_2533d1d4c31245408717d17b946bc8d8~mv2.png">
+                    <img src="https://static.wixstatic.com/media/11062b_7dcffe5daf2944b7be0a46ac6d472634~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_7dcffe5daf2944b7be0a46ac6d472634~mv2.png"> 
+                    <img src="https://static.wixstatic.com/media/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png">
+                     <img src="https://static.wixstatic.com/media/11062b_c67939a99eaf442d95d3f851857ceedf~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_c67939a99eaf442d95d3f851857ceedf~mv2.png"> 
+                     <img src="https://static.wixstatic.com/media/269c5c_156dd341aa3a47e693f896910c01697d~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/269c5c_156dd341aa3a47e693f896910c01697d~mv2.png">
+                </div>
+            
+                <div class="linkoption">
+                        <li><a href="home.html">Home</a></li> 
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </div>  
+            </div>
+        
+        
+            
+    </body>
+</html>
